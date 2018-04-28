@@ -16,16 +16,20 @@ class MTool
 public:
 	MTool();
 	~MTool();
+
 	/**
 	* 获取当前运行程序的文件名称
 	*/
 	static std::string GetApplicationNameA();
+
 	/**
 	* 使当前程序运行唯一
 	*/
 	static app_run_e RunUnique(std::string exeName = "");
 
-
+	/**
+	 * 获取当前执行程序的路径
+	 */
 	static std::string GetApplicationPathA();
 
 	/************************************************************************/
@@ -41,17 +45,17 @@ public:
 	/************************************************************************/
 	/* 获取当前应用的绝对路径
 	/************************************************************************/
-	bool GetApplicationPath(wchar_t(&des)[MAX_PATH]);
+	static bool GetApplicationPath(wchar_t(&des)[MAX_PATH]);
 
 	/************************************************************************/
 	/* 当前编码为unicode,char转wchar_t
 	/************************************************************************/
-	std::wstring ANSIToUnicode(const std::string& str);
+	static std::wstring ANSIToUnicode(const std::string& str);
 
 	/************************************************************************/
 	/* 当前编码为unicode,wchar_t转char
 	/************************************************************************/
-	std::string UnicodeToANSI(const std::wstring& str);
+	static std::string UnicodeToANSI(const std::wstring& str);
 
 	/************************************************************************/
 	/* 当前编码为unicode,wchar_t转char
@@ -66,17 +70,17 @@ public:
 	/************************************************************************/
 	/* 当前编码为UTF8,wchar_t转char
 	/************************************************************************/
-	std::string UnicodeToUTF8(const std::wstring& str);
+	static std::string UnicodeToUTF8(const std::wstring& str);
 
 	/************************************************************************/
 	/* 生成SessionID
 	/************************************************************************/
-	std::string GetSessionId();
+	static std::string GetSessionId();
 
 	/************************************************************************/
 	/* 对时间做加法
 	/************************************************************************/
-	void Systemtime_Add_Milliseconds(SYSTEMTIME src, SYSTEMTIME &dst, unsigned long Milliseconds);
+	static void Systemtime_Add_Milliseconds(SYSTEMTIME src, SYSTEMTIME &dst, unsigned long Milliseconds);
 	/************************************************************************/
 	/* 对时间做减法
 	/************************************************************************/
