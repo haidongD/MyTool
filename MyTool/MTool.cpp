@@ -37,7 +37,7 @@ std::string MTool::GetApplicationNameA()
 	return name;
 }
 
-app_run_e MTool::RunUnique(std::string exeName /*= ""*/)
+app_run_e MTool::RunUniqueA(std::string exeName /*= ""*/)
 {
 	HANDLE hMutex = NULL;
 	std::string szName = GetApplicationNameA();
@@ -93,7 +93,7 @@ std::string MTool::GetApplicationPathA()
 	return strPath;
 }
 
-bool MTool::GetApplicationPath(wchar_t(&des)[MAX_PATH])
+bool MTool::GetApplicationPathW(wchar_t(&des)[MAX_PATH])
 {
 	size_t len = 0;
 	size_t converted = 0;
@@ -242,7 +242,7 @@ std::string MTool::GetSessionId()
 	return sessionID;
 }
 
-void MTool::Systemtime_Add_Milliseconds(SYSTEMTIME src, SYSTEMTIME &dst, unsigned long Milliseconds)
+void MTool::SystemtimeAddMilliseconds(SYSTEMTIME src, SYSTEMTIME &dst, unsigned long Milliseconds)
 {
 	FILETIME ft;
 	SystemTimeToFileTime(&src, &ft);
@@ -291,7 +291,7 @@ std::string MTool::UnicodeToANSIS(const std::wstring& str)
 	return strText;
 }
 
-void MTool::Systemtime_Del_Milliseconds(SYSTEMTIME src, SYSTEMTIME &dst, unsigned long Milliseconds)
+void MTool::SystemtimeDelMilliseconds(SYSTEMTIME src, SYSTEMTIME &dst, unsigned long Milliseconds)
 {
 	FILETIME ft;
 	SystemTimeToFileTime(&src, &ft);
@@ -321,7 +321,7 @@ void MTool::BuildFormatStr(std::string &str, const char* format, ...)
 	str = buf;
 }
 
-std::string MTool::getTimeStr(SYSTEMTIME *time)
+std::string MTool::GetTimeStr(SYSTEMTIME *time)
 {
 	std::string rlt;
 	BuildFormatStr(rlt, "%04u-%02u-%02u %02u:%02u:%02u",
@@ -356,7 +356,7 @@ time_t MTool::convert_string_to_time_t(const std::string & time_string)
 	return time1;
 }
 
-double MTool::TimeString_Del_TimeString(std::string start, std::string end)
+double MTool::TimeStringDelTimeString(std::string start, std::string end)
 {
 	time_t s, e;
 	s = convert_string_to_time_t(start);

@@ -25,7 +25,7 @@ public:
 	/**
 	* 使当前程序运行唯一
 	*/
-	static app_run_e RunUnique(std::string exeName = "");
+	static app_run_e RunUniqueA(std::string exeName = "");
 
 	/**
 	 * 获取当前执行程序的路径
@@ -45,7 +45,7 @@ public:
 	/************************************************************************/
 	/* 获取当前应用的绝对路径
 	/************************************************************************/
-	static bool GetApplicationPath(wchar_t(&des)[MAX_PATH]);
+	static bool GetApplicationPathW(wchar_t(&des)[MAX_PATH]);
 
 	/************************************************************************/
 	/* 当前编码为unicode,char转wchar_t
@@ -80,19 +80,20 @@ public:
 	/************************************************************************/
 	/* 对时间做加法
 	/************************************************************************/
-	static void Systemtime_Add_Milliseconds(SYSTEMTIME src, SYSTEMTIME &dst, unsigned long Milliseconds);
+	static void SystemtimeAddMilliseconds(SYSTEMTIME src, SYSTEMTIME &dst, unsigned long Milliseconds);
 	/************************************************************************/
 	/* 对时间做减法
 	/************************************************************************/
-	static void Systemtime_Del_Milliseconds(SYSTEMTIME src, SYSTEMTIME &dst, unsigned long Milliseconds);
+	static void SystemtimeDelMilliseconds(SYSTEMTIME src, SYSTEMTIME &dst, unsigned long Milliseconds);
 	/************************************************************************/
 	/* 组装字符串
 	/************************************************************************/
 	static void BuildFormatStr(std::string &str, const char* format, ...);
-	/*指定时间格式化*/
-	static std::string getTimeStr(SYSTEMTIME *time);
+
+	/*指定时间格式化yyyy-MM-dd HH:mm:ss*/
+	static std::string GetTimeStr(SYSTEMTIME *time);
 	/*时间做减法*/
-	static double TimeString_Del_TimeString(std::string start,std::string end);
+	static double TimeStringDelTimeString(std::string start,std::string end);
 
 private:
 	/*字符串转时间*/
