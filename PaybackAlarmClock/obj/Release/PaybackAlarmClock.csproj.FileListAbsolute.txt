@@ -1,0 +1,13 @@
+D:\work2\PaybackAlarmClock\PaybackAlarmClock\bin\Release\PaybackAlarmClock.exe.config
+D:\work2\PaybackAlarmClock\PaybackAlarmClock\bin\Release\PaybackAlarmClock.exe
+D:\work2\PaybackAlarmClock\PaybackAlarmClock\bin\Release\PaybackAlarmClock.pdb
+D:\work2\PaybackAlarmClock\PaybackAlarmClock\bin\Release\MySql.Data.dll
+D:\work2\PaybackAlarmClock\PaybackAlarmClock\obj\Release\MainWindow.baml
+D:\work2\PaybackAlarmClock\PaybackAlarmClock\obj\Release\MainWindow.g.cs
+D:\work2\PaybackAlarmClock\PaybackAlarmClock\obj\Release\App.g.cs
+D:\work2\PaybackAlarmClock\PaybackAlarmClock\obj\Release\PaybackAlarmClock_MarkupCompile.cache
+D:\work2\PaybackAlarmClock\PaybackAlarmClock\obj\Release\PaybackAlarmClock.g.resources
+D:\work2\PaybackAlarmClock\PaybackAlarmClock\obj\Release\PaybackAlarmClock.Properties.Resources.resources
+D:\work2\PaybackAlarmClock\PaybackAlarmClock\obj\Release\PaybackAlarmClock.csproj.GenerateResource.Cache
+D:\work2\PaybackAlarmClock\PaybackAlarmClock\obj\Release\PaybackAlarmClock.exe
+D:\work2\PaybackAlarmClock\PaybackAlarmClock\obj\Release\PaybackAlarmClock.pdb
